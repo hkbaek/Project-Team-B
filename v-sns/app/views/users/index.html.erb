@@ -1,10 +1,11 @@
-<h1>Listing users</h1>
+<div class="page-header">
+  <h1>Listing Users <small></small></h1>
+</div>
 
-<table>
+<table class="table table-striped">
   <thead>
     <tr>
       <th>Email</th>
-      <th>Password digest</th>
       <th>Name</th>
       <th></th>
       <th></th>
@@ -16,11 +17,14 @@
     <% @users.each do |user| %>
       <tr>
         <td><%= user.email %></td>
-        <td><%= user.password_digest %></td>
         <td><%= user.name %></td>
-        <td><%= link_to 'Show', user %></td>
-        <td><%= link_to 'Edit', edit_user_path(user) %></td>
-        <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+				<td>
+					<div class="brn-groups">
+						<%= link_to 'Show', user, :class => "btn" %>
+						<%= link_to 'Edit', edit_user_path(user), :class => "btn" %>
+						<%= link_to 'Destroy', user, method: :delete, :class => "btn", data: { confirm: 'Are you sure?' } %>
+					</div>
+				</td>
       </tr>
     <% end %>
   </tbody>
@@ -28,4 +32,4 @@
 
 <br>
 
-<%= link_to 'New User', new_user_path %>
+<%= link_to 'New User', new_user_path, :class => "btn btn-large" %>

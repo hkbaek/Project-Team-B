@@ -7,6 +7,12 @@ VSns::Application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'welcome#index'
 
+	controller :session do
+		get 'signin' => :new
+		post 'signin' => :create
+		delete 'signout' => :destroy
+	end
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
