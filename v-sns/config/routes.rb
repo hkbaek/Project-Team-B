@@ -1,5 +1,11 @@
 VSns::Application.routes.draw do
+<<<<<<< HEAD
   devise_for :users, controllers: { confirmations: "confirmations" } 
+=======
+  resources :posts
+
+  devise_for :users
+>>>>>>> original/master
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

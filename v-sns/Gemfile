@@ -50,3 +50,5 @@ gem 'devise'
 
 # gravatar_tag
 gem 'gravatar_image_tag'
+
+# 
