@@ -1,0 +1,33 @@
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch use_devise
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	deleted:    v-sns/app/assets/javascripts/session.js.coffee
+#	deleted:    v-sns/app/assets/javascripts/users.js.coffee
+#	deleted:    v-sns/app/assets/stylesheets/session.css.scss
+#	deleted:    v-sns/app/assets/stylesheets/users.css.scss
+#	deleted:    v-sns/app/controllers/session_controller.rb
+#	deleted:    v-sns/app/controllers/users_controller.rb
+#	deleted:    v-sns/app/helpers/session_helper.rb
+#	deleted:    v-sns/app/helpers/users_helper.rb
+#	deleted:    v-sns/app/views/layouts/.application.html.erb.swp
+#	deleted:    v-sns/app/views/session/create.html.erb
+#	deleted:    v-sns/app/views/session/destroy.html.erb
+#	deleted:    v-sns/app/views/session/new.html.erb
+#	deleted:    v-sns/app/views/users/_form.html.erb
+#	deleted:    v-sns/app/views/users/edit.html.erb
+#	deleted:    v-sns/app/views/users/index.html.erb
+#	deleted:    v-sns/app/views/users/index.json.jbuilder
+#	deleted:    v-sns/app/views/users/new.html.erb
+#	deleted:    v-sns/app/views/users/show.html.erb
+#	deleted:    v-sns/app/views/users/show.json.jbuilder
+#	deleted:    v-sns/db/migrate/20130825232024_create_users.rb
+#	deleted:    v-sns/db/migrate/20130826015031_create_users.rb
+#	deleted:    v-sns/test/controllers/session_controller_test.rb
+#	deleted:    v-sns/test/controllers/users_controller_test.rb
+#	deleted:    v-sns/test/helpers/session_helper_test.rb
+#	deleted:    v-sns/test/helpers/users_helper_test.rb
+#
