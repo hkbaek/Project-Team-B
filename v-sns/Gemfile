@@ -44,4 +44,9 @@ gem 'bcrypt-ruby', '~> 3.0.0'
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+# Use devise
+# user, role, admin mgr. auth.
 gem 'devise'
+
+# gravatar_tag
+gem 'gravatar_image_tag'
