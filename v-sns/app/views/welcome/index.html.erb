@@ -2,4 +2,5 @@
 <p>Find me in app/views/welcome/index.html.erb</p>
 <% if user_signed_in? %>
 	<%= session.methods %>
+	<%= gravatar_image_tag(current_user.email.gsub('spam', 'mdeering'), :alt => current_user.email ) %>
 <% end %>
