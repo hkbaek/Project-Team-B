@@ -11,6 +11,10 @@
 </p>
 
 
+<p>		<%= image_tag @post.image_url %>
+</p>
+
+
 <% if signed_in? and @post.user == current_user %>	
 <%= link_to 'Edit', edit_post_path(@post) %> |
 <% end %>
