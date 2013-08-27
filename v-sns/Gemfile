@@ -35,6 +35,9 @@ gem 'devise'
 # gravatar_tag
 gem 'gravatar_image_tag'
 
+# Simple_form
+gem 'simple_form'
+
 # 이미지 프로세싱
 gem 'rmagick'
 
@@ -57,4 +60,3 @@ gem 'bcrypt-ruby', '~> 3.0.0'
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
-
