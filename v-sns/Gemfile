@@ -35,8 +35,8 @@ gem 'devise'
 # gravatar_tag
 gem 'gravatar_image_tag'
 
-# 이미지 프로세싱
-gem 'rmagick'
+# 이미지 프로세싱 error
+#gem 'rmagick'
 
 # 이미지 업로드
 gem 'carrierwave'
@@ -60,3 +60,6 @@ gem 'bcrypt-ruby', '~> 3.0.0'
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+
+# chatting service
+gem 'mad_chatter'
