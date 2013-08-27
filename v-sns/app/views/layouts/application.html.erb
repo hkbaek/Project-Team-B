@@ -58,15 +58,32 @@
 		</div>
 	</div>
 
-<div class="container">
-	<% if notice %>
-		<p class="alert alert-notice"><%= notice %></p>
-	<% end %>
-	<% if alert %>
-		<p class="alert alert-error"><%= alert %></p>
-	<% end %>
-	<%= yield %>
-</div> <!-- /container -->
-
+	<div class="container-fluid">
+		<div class="row-fluid">
+			<div class="span9">
+				<% if notice %>
+					<p class="alert alert-notice"><%= notice %></p>
+				<% end %>
+				<% if alert %>
+					<p class="alert alert-error"><%= alert %></p>
+				<% end %>
+				<%= yield %>
+			</div><!--/span-->
+			<div class="span3">
+				<div class="well sidebar-nav">
+					<ul class="nav nav-list">
+						<% if user_signed_in? %>
+							<li class="nav-header"><%= current_user.email %></li>
+							<%= gravatar_image_tag(current_user.email.gsub('spam', 'mdeering'), :alt => current_user.email ) %>
+						<% end %>
+						<li>Tags</li>
+						<li>Followes</li>
+						<li>Following</li>
+						<li>Chat</li>
+					</ul>
+				</div><!--/.well -->
+			</div><!--/span-->
+		</div><!--/row-->
+	</div><!-- /container -->
 </body>
 </html>
