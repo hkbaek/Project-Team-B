@@ -14,6 +14,11 @@
 <p>		<%= image_tag @post.image_url %>
 </p>
 
+<h2>Comments</h2>
+<%= render @post.comments %>
+ 
+<h2>Add a comment:</h2>
+<%= render "comments/form" %>
 
 <% if signed_in? and @post.user == current_user %>	
 <%= link_to 'Edit', edit_post_path(@post) %> |
