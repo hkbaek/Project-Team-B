@@ -1,17 +1,23 @@
 class PostsController < ApplicationController
-  before_action :set_post, only: [:show, :edit, :update, :destroy]
+
+  before_filter :get_user
+  before_action :set_post, only: [:show, :edit, :update, :destroy]  
   before_filter :authenticate_user!, except: [:index, :show]
 
   # GET /posts
   # GET /posts.json
   def index
-    @posts = Post.all
+    # 해당 유저의 포스트만 가져옴
+    @posts = @user.posts
   end
 
   # GET /posts/1
   # GET /posts/1.json
   def show
+    # 유저와 Follow관계가 맺어있는 사람의 게시물을 가져와야합니다.
+    
   end
+
 
   # GET /posts/new
   def new
@@ -65,11 +71,19 @@ class PostsController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_post
-      @post = Post.find(params[:id])
+      # @post = Post.find(params[:id])
+      @post = @user.posts.find(params[:id])
+
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def post_params
       params.require(:post).permit(:title, :content, :user_id, :image)
     end
-end
+
+    # 현재 유저 정보 가져옴
+    def get_user
+      @user = current_user
+    end
+
+  end

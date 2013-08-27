@@ -35,6 +35,7 @@ gem 'devise'
 # gravatar_tag
 gem 'gravatar_image_tag'
 
+<<<<<<< HEAD
 # Simple_form
 gem 'simple_form'
 
@@ -60,3 +61,6 @@ gem 'bcrypt-ruby', '~> 3.0.0'
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+# chatting service
+gem 'mad_chatter'
