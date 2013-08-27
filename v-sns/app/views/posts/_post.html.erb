@@ -1,11 +1,16 @@
-<tr>
-	
-	<td><%= post.title %></td>
-	<td><%= post.content %></td>
-	<td><%= post.user.email %></td>
-	<td><%= link_to 'Show', post %></td>
-	<% if signed_in? and post.user == current_user %>	
-	<td><%= link_to 'Edit', edit_post_path(post) %></td>
-	<td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-	<% end %>
-</tr>
+
+<li class="span4">
+	<div class="thumbnail">
+		<%= image_tag post.image_url %>
+		<h3><%= post.title %></h3>
+		<p><%= post.content %></p>
+		<p><%= post.user.email %></p>
+		<% if signed_in? and post.user == current_user %>	
+		<p>
+			<%= link_to 'Edit', edit_post_path(post), class: 'btn' %> 
+			<%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger' %>
+		</p>
+		<% end %>
+
+	</div>
+</li>

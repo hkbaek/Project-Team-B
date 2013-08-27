@@ -27,6 +27,22 @@ gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
 
+
+# Use devise
+# user, role, admin mgr. auth.
+gem 'devise'
+
+# gravatar_tag
+gem 'gravatar_image_tag'
+
+# 이미지 프로세싱
+gem 'rmagick'
+
+# 이미지 업로드
+gem 'carrierwave'
+
+
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
@@ -44,11 +60,3 @@ gem 'bcrypt-ruby', '~> 3.0.0'
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
-# Use devise
-# user, role, admin mgr. auth.
-gem 'devise'
-
-# gravatar_tag
-gem 'gravatar_image_tag'
-
-# 

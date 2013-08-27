@@ -22,10 +22,17 @@
     <%= f.text_area :content %>
   </div>
 </div>  
+<div class="control-group">
+  <%= f.label :image, :class => 'control-label' %> 
+  <div class="controls">
+    <%= f.file_field :image %>
+  </div>
+</div>  
 
 <div class="control-group">
   <div class="controls">
-    <%= f.submit 'Create Post',:class => 'btn' %>
+    <%= f.submit :class => 'btn' %>
   </div>
 </div>
 <% end %>
+
