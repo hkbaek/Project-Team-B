@@ -41,8 +41,6 @@ gem 'rmagick'
 # 이미지 업로드
 gem 'carrierwave'
 
-
-
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
