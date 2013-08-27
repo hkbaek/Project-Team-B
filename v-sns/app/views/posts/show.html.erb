@@ -14,10 +14,13 @@
 <p>		<%= image_tag @post.image_url %>
 </p>
 
-<h2>Comments</h2>
+<p>
+  <strong>Tags:</strong>
+  <%= join_tags(@post) %>
+</p>
+
 <%= render @post.comments %>
  
-<h2>Add a comment:</h2>
 <%= render "comments/form" %>
 
 <% if signed_in? and @post.user == current_user %>	
