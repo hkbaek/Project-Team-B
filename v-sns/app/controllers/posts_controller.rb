@@ -80,7 +80,7 @@ class PostsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def post_params
-      params.require(:post).permit(:title, :content, :user_id, :image)
+      params.require(:post).permit(:title, :content, :user_id, :image, :tag_list)
     end
 
     # 현재 유저 정보 가져옴

@@ -63,3 +63,6 @@ gem 'bcrypt-ruby', '~> 3.0.0'
 
 # chatting service
 gem 'mad_chatter'
+
+# acts-as-taggable-on
+gem "acts-as-taggable-on", "~> 2.4.1"

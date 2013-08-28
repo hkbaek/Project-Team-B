@@ -10,8 +10,12 @@
 	<%= @post.content %>
 </p>
 
+<p>		
+	<%= image_tag @post.image_url %>
+</p>
 
-<p>		<%= image_tag @post.image_url %>
+<p>
+	TAGS : <%= @post.tag_list %>
 </p>
 
 <%= render @post.comments %>
