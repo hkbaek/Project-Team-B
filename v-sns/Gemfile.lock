@@ -47,13 +47,9 @@ GEM
       orm_adapter (~> 0.1)
       railties (>= 3.2.6, < 5)
       warden (~> 1.2.3)
-<<<<<<< HEAD
-    devise-i18n (0.9.0)
-=======
     em-websocket (0.5.0)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.5.3)
->>>>>>> original/master
     erubis (2.7.0)
     eventmachine (1.0.3)
     eventmachine (1.0.3-x86-mingw32)
@@ -102,6 +98,7 @@ GEM
     rake (10.1.0)
     rdoc (3.12.2)
       json (~> 1.4)
+    rmagick (2.13.2)
     sass (3.2.10)
     sass-rails (4.0.0)
       railties (>= 4.0.0.beta, < 5.0)
@@ -147,12 +144,12 @@ DEPENDENCIES
   carrierwave
   coffee-rails (~> 4.0.0)
   devise
-  devise-i18n (~> 0.9.0)
   gravatar_image_tag
   jbuilder (~> 1.2)
   jquery-rails
   mad_chatter
   rails (= 4.0.0)
+  rmagick
   sass-rails (~> 4.0.0)
   sdoc
   simple_form

@@ -8,7 +8,8 @@ class PostsController < ApplicationController
   # GET /posts.json
   def index
     # 해당 유저의 포스트만 가져옴
-    @posts = @user.posts
+      @posts = @user.posts
+    
   end
 
   # GET /posts/1
@@ -83,7 +84,7 @@ class PostsController < ApplicationController
 
     # 현재 유저 정보 가져옴
     def get_user
-      @user = current_user
+      @user = current_user || User.new
     end
 
   end
