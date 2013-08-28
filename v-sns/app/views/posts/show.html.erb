@@ -10,13 +10,12 @@
 	<%= @post.content %>
 </p>
 
-
-<p>		<%= image_tag @post.image_url %>
+<p>		
+	<%= image_tag @post.image_url %>
 </p>
 
 <p>
-  <strong>Tags:</strong>
-  <%= join_tags(@post) %>
+	TAGS : <%= @post.tag_list %>
 </p>
 
 <%= render @post.comments %>
