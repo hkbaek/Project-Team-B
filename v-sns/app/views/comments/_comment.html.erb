@@ -1,10 +1,6 @@
 <p>
-  <strong>Comment:</strong>
-</p>
-
-<p>
   <strong>Commenter:</strong>
-  <%= comment.commenter %>
+  <%= comment.user.email %>
 </p>
  
 <p>
@@ -12,9 +8,10 @@
   <%= comment.body %>
 </p>
  
-<p>
-  <%= link_to 'Destroy Comment', [comment.post, comment],
-               :confirm => 'Are you sure?',
-               :method => :delete %>
-</p>
-
+<% if signed_in? and comment.user == current_user %>	
+	<p>
+		<%= link_to 'Destroy Comment', [comment.post, comment],
+								 :confirm => 'Are you sure?',
+								 :method => :delete %>
+	</p>
+<% end %>

@@ -5,6 +5,7 @@ class User < ActiveRecord::Base
   belongs_to :role
   before_create :set_default_role
   has_many :posts
+	has_many :comments
   
   devise :database_authenticatable, :registerable, :confirmable,
   :recoverable, :rememberable, :trackable, :validatable
