@@ -35,13 +35,15 @@ gem 'devise'
 # gravatar_tag
 gem 'gravatar_image_tag'
 
-# 이미지 프로세싱 error
-#gem 'rmagick'
+<<<<<<< HEAD
+# Simple_form
+gem 'simple_form'
+
+# 이미지 프로세싱
+gem 'rmagick'
 
 # 이미지 업로드
 gem 'carrierwave'
-
-
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
@@ -59,7 +61,6 @@ gem 'bcrypt-ruby', '~> 3.0.0'
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
-
 
 # chatting service
 gem 'mad_chatter'
